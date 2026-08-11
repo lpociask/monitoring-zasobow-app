@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#11140f">
+    <meta name="description" content="CPU, GPU, RAM, dysk i sieć w natywnej aplikacji macOS z bezpiecznym, lokalnym Warsztatem. Pobierz Monitoring Zasobów 1.0.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:title" content="Monitoring Zasobów 1.0">
+    <meta property="og:description" content="Twój Mac pod kontrolą — w stylu analogowego racka. Natywny monitoring i lokalny Warsztat dla macOS.">
+    <meta property="og:url" content="https://lpociask.github.io/monitoring-zasobow-app/">
+    <meta property="og:image" content="https://lpociask.github.io/monitoring-zasobow-app/assets/app-icon.png">
+    <meta property="og:image:alt" content="Ikona Monitoring Zasobów — zielony analogowy wskaźnik na czarnym panelu">
+    <link rel="canonical" href="https://lpociask.github.io/monitoring-zasobow-app/">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/app-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Monitoring Zasobów 1.0 — monitoring Maca w stylu analogowego racka</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Główna nawigacja">
+        <a class="brand" href="./" aria-label="Monitoring Zasobów — strona główna">
+          <img src="assets/favicon.png" width="32" height="32" alt="">
+          <span>Monitoring Zasobów</span>
+        </a>
+        <div class="nav-links">
+          <a href="#mozliwosci">Możliwości</a>
+          <a href="#instalacja">Instalacja</a>
+          <a href="privacy.html">Prywatność</a>
+        </div>
+        <a class="button button-small" href="https://github.com/lpociask/monitoring-zasobow-app/releases/download/v1.0.0/MonitoringZasobow-1.0-1.dmg">Pobierz 1.0</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> Monitoring Zasobów 1.0 · macOS</p>
+          <h1>Twój Mac. Pod kontrolą, w stylu analogowego racka.</h1>
+          <p class="lead">Natywny monitoring CPU, GPU, RAM, dysku i sieci — z bezpiecznym Warsztatem do analizy miejsca, aplikacji i kondycji systemu. Wszystko lokalnie.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/lpociask/monitoring-zasobow-app/releases/download/v1.0.0/MonitoringZasobow-1.0-1.dmg">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
+              Pobierz wersję 1.0
+            </a>
+            <a class="button button-secondary" href="https://github.com/lpociask/monitoring-zasobow-app/releases/tag/v1.0.0">Zobacz wydanie</a>
+          </div>
+          <ul class="trust-list" aria-label="Wymagania i zgodność">
+            <li>macOS 14+</li>
+            <li>Apple silicon + Intel</li>
+            <li>Developer ID + notaryzacja Apple</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="app-orbit" aria-hidden="true"></div>
+          <img class="app-icon" src="assets/app-icon.png" width="512" height="512" alt="Ikona Monitoring Zasobów — zielony analogowy wskaźnik na czarnym panelu">
+          <div class="version-plate"><span>RELEASE</span><strong>1.0</strong></div>
+        </div>
+      </section>
+
+      <section class="rack-preview shell" aria-labelledby="rack-heading">
+        <div class="rack-topline">
+          <div>
+            <p class="section-kicker">STUDIO GREEN / LIVE DECK</p>
+            <h2 id="rack-heading">Monitoring bez tabelkowej nudy</h2>
+          </div>
+          <div class="rack-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="meter-grid" aria-label="Wizualizacja stylistyki interfejsu aplikacji">
+          <article class="meter-card" style="--needle: -18deg; --signal: 38%">
+            <div class="meter-screen">
+              <div class="meter-scale"><span>0</span><span>50</span><span>100</span></div>
+              <div class="meter-arc"></div>
+              <div class="needle"></div>
+              <div class="needle-pin"></div>
+              <span class="meter-value">38%</span>
+            </div>
+            <div class="meter-label"><span>CPU</span><small>AKTYWNOŚĆ</small></div>
+          </article>
+          <article class="meter-card" style="--needle: 11deg; --signal: 62%">
+            <div class="meter-screen">
+              <div class="meter-scale"><span>0</span><span>50</span><span>100</span></div>
+              <div class="meter-arc"></div>
+              <div class="needle"></div>
+              <div class="needle-pin"></div>
+              <span class="meter-value">62%</span>
+            </div>
+            <div class="meter-label"><span>RAM</span><small>UŻYCIE</small></div>
+          </article>
+          <article class="meter-card" style="--needle: -34deg; --signal: 24%">
+            <div class="meter-screen">
+              <div class="meter-scale"><span>0</span><span>50</span><span>100</span></div>
+              <div class="meter-arc"></div>
+              <div class="needle"></div>
+              <div class="needle-pin"></div>
+              <span class="meter-value">24%</span>
+            </div>
+            <div class="meter-label"><span>SIEĆ</span><small>RUCH</small></div>
+          </article>
+        </div>
+        <p class="visual-note">Dekoracyjna wizualizacja stylistyki interfejsu — wartości są przykładowe.</p>
+      </section>
+
+      <section class="feature-section shell" id="mozliwosci">
+        <div class="section-heading">
+          <p class="section-kicker">JEDNA APLIKACJA, KILKA PERSPEKTYW</p>
+          <h2>Od szybkiego spojrzenia po porządny przegląd Maca.</h2>
+          <p>Wybierz spokojne wskaźniki na biurko albo zejdź do procesów, urządzeń i historii operacji.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card signal-green">
+            <span class="feature-number">01</span>
+            <h3>Rack na żywo</h3>
+            <p>CPU, GPU, RAM, dysk i sieć w analogowych wskaźnikach. Do tego Szczegóły, Urządzenia, Mini, Biurko i panel w pasku menu.</p>
+          </article>
+          <article class="feature-card signal-amber">
+            <span class="feature-number">02</span>
+            <h3>Warsztat, który najpierw pyta</h3>
+            <p>Inspektor działa tylko do odczytu. Porządki i aplikacje trafiają do Kosza dopiero po ręcznym wyborze i osobnym potwierdzeniu.</p>
+          </article>
+          <article class="feature-card signal-red">
+            <span class="feature-number">03</span>
+            <h3>Dane zostają na Macu</h3>
+            <p>Bez konta, reklam, analityki i trackerów. Ustawienia, historia Warsztatu i snapshot Stream Deck pozostają lokalne.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="workshop-section">
+        <div class="shell split-layout">
+          <div class="workshop-panel">
+            <div class="panel-titlebar">
+              <span class="panel-dot green"></span><span class="panel-dot amber"></span><span class="panel-dot red"></span>
+              <span>WARSZTAT / KONTROLA</span>
+            </div>
+            <div class="diagnostic-row"><span>Inspektor dysku</span><strong>TYLKO ODCZYT</strong></div>
+            <div class="diagnostic-row"><span>Operacje porządkowe</span><strong>RĘCZNY WYBÓR</strong></div>
+            <div class="diagnostic-row"><span>Usuwanie aplikacji</span><strong>DO KOSZA</strong></div>
+            <div class="diagnostic-row"><span>Historia operacji</span><strong>90 DNI</strong></div>
+            <div class="diagnostic-row"><span>Aplikacje systemowe</span><strong>CHRONIONE</strong></div>
+          </div>
+          <div class="split-copy">
+            <p class="section-kicker">BEZ „MAGICZNEGO” CZYSZCZENIA</p>
+            <h2>Widzisz, wybierasz, potwierdzasz.</h2>
+            <p>Warsztat pokazuje największe pliki, instalatory, pozostałości i aplikacje, ale niczego nie zaznacza automatycznie. Chroni programy systemowe, aplikacje Apple, uruchomione procesy i sam Monitoring Zasobów.</p>
+            <p>Serwis sprawdza wolne miejsce, stan termiczny, zasilanie, RAM, trasę sieciową i czas pracy systemu — bez naprawiania usług i bez proszenia o uprawnienia administratora.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="modes-section shell">
+        <div class="section-heading compact">
+          <p class="section-kicker">DOPASUJ SWÓJ RACK</p>
+          <h2>Pięć widoków. Pięć charakterów.</h2>
+        </div>
+        <div class="mode-strip" aria-label="Widoki aplikacji">
+          <span class="active">Rack</span><span>Szczegóły</span><span>Urządzenia</span><span>Mini</span><span>Biurko</span>
+        </div>
+        <div class="theme-grid">
+          <div class="theme-chip theme-green"><i></i><span>Studio Green</span></div>
+          <div class="theme-chip theme-amber"><i></i><span>Amber Lab</span></div>
+          <div class="theme-chip theme-red"><i></i><span>Redline</span></div>
+          <div class="theme-chip theme-lcd"><i></i><span>Vintage LCD</span></div>
+          <div class="theme-chip theme-dark"><i></i><span>Dark Rack</span></div>
+        </div>
+        <p class="center-copy">Ustaw progi kolorów, kolejność paneli, tempo odświeżania i zachowanie igieł. Możesz też uruchamiać aplikację wraz z macOS albo zostawić ją wyłącznie w pasku menu.</p>
+      </section>
+
+      <section class="integration-section">
+        <div class="shell integration-grid">
+          <div>
+            <p class="section-kicker">LOKALNY MOST</p>
+            <h2>Gotowa do zgodnych integracji Stream Deck.</h2>
+            <p>Aplikacja zapisuje lokalny, wersjonowany snapshot JSON i obsługuje deep linki do Racka oraz Szczegółów. Snapshot nie zawiera PID-ów, nazw, komend ani ścieżek procesów.</p>
+          </div>
+          <div class="code-card" aria-label="Przykład lokalnego snapshotu Stream Deck">
+            <div class="code-card-top"><span></span><span></span><span></span><small>streamdeck-snapshot-v1.json</small></div>
+            <pre><code>{
+  "version": 1,
+  "metrics": {
+    "cpu": { "available": true },
+    "memory": { "available": true }
+  }
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="install-section shell" id="instalacja">
+        <div class="section-heading">
+          <p class="section-kicker">INSTALACJA</p>
+          <h2>Od pobrania do pierwszego pomiaru w trzy kroki.</h2>
+        </div>
+        <ol class="steps">
+          <li><span>1</span><div><h3>Pobierz DMG</h3><p>Pobierz podpisany obraz wersji 1.0 z GitHub Releases.</p></div></li>
+          <li><span>2</span><div><h3>Przenieś do Aplikacji</h3><p>Otwórz DMG i przeciągnij Monitoring Zasobów do folderu Applications.</p></div></li>
+          <li><span>3</span><div><h3>Uruchom</h3><p>macOS sprawdzi podpis Developer ID oraz bilet notaryzacji Apple.</p></div></li>
+        </ol>
+        <div class="requirements">
+          <div><span>WYMAGANY SYSTEM</span><strong>macOS 14 Sonoma lub nowszy</strong></div>
+          <div><span>ARCHITEKTURY</span><strong>Apple silicon i Intel</strong></div>
+          <div><span>DYSTRYBUCJA</span><strong>Developer ID · Apple Notary Service</strong></div>
+        </div>
+      </section>
+
+      <section class="final-cta shell">
+        <img src="assets/app-icon.png" width="128" height="128" alt="">
+        <div>
+          <p class="section-kicker">MONITORING ZASOBÓW 1.0</p>
+          <h2>Posłuchaj, co mówi Twój Mac.</h2>
+          <p>Natywnie, lokalnie i bez abonamentu uwagi.</p>
+        </div>
+        <a class="button button-primary" href="https://github.com/lpociask/monitoring-zasobow-app/releases/download/v1.0.0/MonitoringZasobow-1.0-1.dmg">Pobierz DMG</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-inner">
+        <p>© 2026 lpociask · Monitoring Zasobów</p>
+        <nav aria-label="Stopka">
+          <a href="privacy.html">Prywatność</a>
+          <a href="https://github.com/lpociask/monitoring-zasobow-app">GitHub</a>
+          <a href="https://github.com/lpociask/monitoring-zasobow-app/issues">Wsparcie</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

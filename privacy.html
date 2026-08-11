@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#11140f">
+    <meta name="description" content="Polityka prywatności aplikacji Monitoring Zasobów i jej strony internetowej.">
+    <link rel="canonical" href="https://lpociask.github.io/monitoring-zasobow-app/privacy.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Prywatność — Monitoring Zasobów</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Główna nawigacja">
+        <a class="brand" href="./" aria-label="Monitoring Zasobów — strona główna">
+          <img src="assets/favicon.png" width="32" height="32" alt="">
+          <span>Monitoring Zasobów</span>
+        </a>
+        <a class="button button-small" href="./">Wróć do strony</a>
+      </nav>
+    </header>
+
+    <main id="main" class="policy-main shell">
+      <div class="policy-hero">
+        <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> Prywatność</p>
+        <h1>Twoje dane zostają na Twoim Macu.</h1>
+        <p class="lead">Monitoring Zasobów nie wymaga konta, nie zawiera reklam, analityki ani mechanizmów śledzących i nie wysyła danych użytkownika do autora.</p>
+        <p class="policy-date">Wersja dokumentu: 11 sierpnia 2026 r.</p>
+      </div>
+
+      <article class="policy-content">
+        <section>
+          <h2>1. Dane przetwarzane przez aplikację</h2>
+          <p>Aplikacja odczytuje lokalne informacje potrzebne do pokazania kondycji Maca: wykorzystanie CPU, GPU, pamięci, dysku i sieci, informacje o woluminach i urządzeniach oraz — w widoku szczegółowym — dane o aktywności procesów dostępne w macOS.</p>
+          <p>Warsztat może lokalnie analizować wskazane obszary dysku, aplikacje oraz powiązane pliki cache i logów. Elementy są przenoszone do Kosza wyłącznie po ręcznym wyborze i potwierdzeniu użytkownika.</p>
+        </section>
+
+        <section>
+          <h2>2. Przechowywanie lokalne</h2>
+          <p>Ustawienia, historia Warsztatu i snapshot dla zgodnych integracji Stream Deck pozostają na urządzeniu. Historia Warsztatu jest utrzymywana przez maksymalnie 90 dni, z limitami 500 operacji i 5000 pozycji.</p>
+          <p>Snapshot Stream Deck jest zapisywany atomowo w prywatnym katalogu Application Support. Katalog otrzymuje uprawnienia <code>0700</code>, a plik <code>0600</code>. Snapshot nie zawiera PID-ów, nazw, komend ani ścieżek procesów.</p>
+        </section>
+
+        <section>
+          <h2>3. Sieć, analityka i śledzenie</h2>
+          <p>Aplikacja nie zawiera SDK reklamowych ani analitycznych, nie tworzy kont i nie wysyła odczytów systemowych, historii ani ustawień do autora. Sprawdzanie trasy sieciowej i aktywności procesów odbywa się lokalnie z użyciem mechanizmów macOS.</p>
+        </section>
+
+        <section>
+          <h2>4. Strona internetowa</h2>
+          <p>Ta witryna nie ładuje trackerów, zewnętrznych fontów ani narzędzi analitycznych. Jest hostowana przez GitHub Pages, dlatego obsługę żądań mogą obejmować techniczne logi i zasady GitHub. Szczegóły opisuje <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+        </section>
+
+        <section>
+          <h2>5. Kontrola użytkownika</h2>
+          <p>Ustawienia i dane aplikacji można usunąć standardowymi narzędziami macOS. Pliki przeniesione przez Warsztat pozostają w Koszu do czasu jego opróżnienia; część operacji można odwrócić z lokalnej Historii, zgodnie z zabezpieczeniami aplikacji.</p>
+        </section>
+
+        <section>
+          <h2>6. Kontakt i wsparcie</h2>
+          <p>Pytania o prywatność lub działanie aplikacji można zgłaszać w sekcji <a href="https://github.com/lpociask/monitoring-zasobow-app/issues">GitHub Issues</a>.</p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-inner">
+        <p>© 2026 lpociask · Monitoring Zasobów</p>
+        <nav aria-label="Stopka">
+          <a href="./">Strona główna</a>
+          <a href="https://github.com/lpociask/monitoring-zasobow-app/issues">Wsparcie</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
