@@ -64,48 +64,30 @@
         </div>
       </section>
 
-      <section class="rack-preview shell" aria-labelledby="rack-heading">
-        <div class="rack-topline">
+      <section class="screens-section shell" id="interfejs" aria-labelledby="screens-heading">
+        <div class="screens-heading">
           <div>
-            <p class="section-kicker">STUDIO GREEN / LIVE DECK</p>
-            <h2 id="rack-heading">Monitoring bez tabelkowej nudy</h2>
+            <p class="section-kicker">PRAWDZIWY INTERFEJS / WERSJA 1.0</p>
+            <h2 id="screens-heading">Rack na żywo. Mini, gdy liczy się skrót.</h2>
           </div>
-          <div class="rack-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p>Pięć zasobów, dwa sposoby podglądu — bez opuszczania natywnego interfejsu macOS.</p>
         </div>
 
-        <div class="meter-grid" role="img" aria-label="Wizualizacja stylistyki interfejsu aplikacji">
-          <article class="meter-card" style="--needle: -18deg; --signal: 38%">
-            <div class="meter-screen">
-              <div class="meter-scale"><span>0</span><span>50</span><span>100</span></div>
-              <div class="meter-arc"></div>
-              <div class="needle"></div>
-              <div class="needle-pin"></div>
-              <span class="meter-value">38%</span>
+        <div class="screenshot-grid">
+          <figure class="app-shot">
+            <div class="screenshot-frame">
+              <img src="assets/screenshot-rack.jpg" width="834" height="768" loading="lazy" decoding="async" alt="Główny widok aplikacji Monitoring Zasobów z analogowymi wskaźnikami CPU, GPU, RAM, dysku i sieci.">
             </div>
-            <div class="meter-label"><span>CPU</span><small>AKTYWNOŚĆ</small></div>
-          </article>
-          <article class="meter-card" style="--needle: 11deg; --signal: 62%">
-            <div class="meter-screen">
-              <div class="meter-scale"><span>0</span><span>50</span><span>100</span></div>
-              <div class="meter-arc"></div>
-              <div class="needle"></div>
-              <div class="needle-pin"></div>
-              <span class="meter-value">62%</span>
+            <figcaption><strong>Rack</strong><span>Pełny podgląd CPU, GPU, RAM, dysku i sieci.</span></figcaption>
+          </figure>
+
+          <figure class="app-shot">
+            <div class="screenshot-frame">
+              <img src="assets/screenshot-mini.jpg" width="1080" height="732" loading="lazy" decoding="async" alt="Widok Mini aplikacji Monitoring Zasobów z kompaktowymi kartami pięciu zasobów.">
             </div>
-            <div class="meter-label"><span>RAM</span><small>UŻYCIE</small></div>
-          </article>
-          <article class="meter-card" style="--needle: -34deg; --signal: 24%">
-            <div class="meter-screen">
-              <div class="meter-scale"><span>0</span><span>50</span><span>100</span></div>
-              <div class="meter-arc"></div>
-              <div class="needle"></div>
-              <div class="needle-pin"></div>
-              <span class="meter-value">24%</span>
-            </div>
-            <div class="meter-label"><span>SIEĆ</span><small>RUCH</small></div>
-          </article>
+            <figcaption><strong>Mini</strong><span>Te same odczyty w kompaktowym układzie kart.</span></figcaption>
+          </figure>
         </div>
-        <p class="visual-note">Dekoracyjna wizualizacja stylistyki interfejsu — wartości są przykładowe.</p>
       </section>
 
       <section class="feature-section shell" id="mozliwosci">
@@ -174,6 +156,26 @@
         <p class="center-copy">Ustaw progi kolorów, kolejność paneli, tempo odświeżania i zachowanie igieł. Możesz też uruchamiać aplikację wraz z macOS albo zostawić ją wyłącznie w pasku menu.</p>
       </section>
 
+      <section class="menubar-section" aria-labelledby="menubar-heading">
+        <div class="shell menubar-grid">
+          <div class="menubar-copy">
+            <p class="section-kicker">ZAWSZE POD RĘKĄ</p>
+            <h2 id="menubar-heading">Najważniejsze odczyty bez otwierania głównego okna.</h2>
+            <p>CPU, GPU, RAM, dysk i sieć w kompaktowym panelu z paska menu. Stąd otworzysz Rack lub Warsztat i odświeżysz pomiar.</p>
+            <div class="menubar-points" aria-label="Funkcje panelu w pasku menu">
+              <span>5 zasobów</span><span>Szybkie akcje</span><span>Top CPU</span>
+            </div>
+          </div>
+
+          <figure class="menubar-shot">
+            <div class="menubar-shot-crop">
+              <img src="assets/screenshot-menubar.jpg" width="350" height="492" loading="lazy" decoding="async" alt="Panel Monitoring Zasobów otwierany z paska menu macOS, pokazujący odczyty CPU, GPU, RAM, dysku i sieci.">
+            </div>
+            <figcaption>Panel menu bar — szybki podgląd i skróty do Racka oraz Warsztatu.</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section class="integration-section">
         <div class="shell integration-grid">
           <div>
@@ -224,9 +226,10 @@
 
     <footer class="footer">
       <div class="shell footer-inner">
-        <p>© 2026 lpociask · Monitoring Zasobów</p>
+        <p>© 2026 Monitoring Zasobów · <a href="https://lpociask.dev/" rel="author">lpociask.dev</a></p>
         <nav aria-label="Stopka">
           <a href="privacy.html">Prywatność</a>
+          <a href="https://lpociask.dev/" rel="author">Strona developera</a>
           <a href="https://github.com/lpociask/monitoring-zasobow-app">GitHub</a>
           <a href="https://github.com/lpociask/monitoring-zasobow-app/issues">Wsparcie</a>
         </nav>
